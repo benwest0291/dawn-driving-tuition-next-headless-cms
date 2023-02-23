@@ -1,0 +1,15 @@
+nav{
+  background-color: $black;
+  }
+
+  li a{
+    color: $white;
+    list-style: none;
+    font-size: 23px;
+    font-family: $secFont;
+    text-decoration: none;
+
+    @media(min-width: $sm-width){
+    flex-direction: column !important;
+    }
+  }

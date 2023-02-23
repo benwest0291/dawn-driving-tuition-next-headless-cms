@@ -1,0 +1,46 @@
+// Colours
+$black: #000;
+$white: #fff;
+$grey: #F7F7F7;
+$red: #ff0000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia&display=swap');
+$secFont: 'Sofia', cursive;
+$mainFont:  'Montserrat', sans-serif;
+
+$font-s: 18px;
+$font-l: 22px;
+$font-xl: 26px;
+$font-xxl: 32px;
+
+// Media queries
+
+$xl-width: 1100px;
+$lg-width: 900px;
+$md-width: 768px;
+$sm-width: 550px;
+
+// Global styles
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: $mainFont
+}
+
+
+// components
+
+@import "../components/Header/Header.scss";
+@import "../components/Header/Navbar.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Footer/Strapline.scss";
+@import "../components/Footer/BaseFooter.scss";
+
+
+//pages
