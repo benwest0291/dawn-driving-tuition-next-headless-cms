@@ -1,5 +1,7 @@
+import Masthead from '@/components/Masthead/Masthead'
 import Head from 'next/head'
-import Footer from '../components/Footer/Footer'
+import Text from '@/components/Text/Text'
+import ImagePartial from '@/components/Image/ImagePartial'
 
 export default function HomePage() {
   return (
@@ -10,7 +12,17 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>homepage</h1>
+      <Masthead />
+      <main className="container mt-5 mb-5">
+        <div className="row flip">
+          <div className="col-12 col-lg-6 ">
+              <Text />
+          </div>
+          <div className="col-12 col-lg-6">
+             <ImagePartial  />
+          </div>
+        </div>
+      </main>
     </>
   )
 }

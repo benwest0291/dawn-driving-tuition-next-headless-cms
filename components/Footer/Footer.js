@@ -6,7 +6,9 @@ import Image from "next/image";
 import Link from 'next/link'
 
 
-const Footer = () => {
+const Footer = () =>
+{
+
   return (
     <footer className="footer">
         <div className="container">
@@ -16,7 +18,7 @@ const Footer = () => {
                    <ul>
                       <li className="mb-4"><FaPhoneAlt className="phone__logo" /> 07980413955  </li>
                       <li className="mb-4"><AiOutlineMail className="mail__logo"/>   dawn@dawndriving.co.uk</li>
-                      <li className="footer__terms mt-3">Terms and conditions</li>
+                      <li className="footer__terms mt-3"><Link href="/policy">Terms and conditions</Link></li>
                   </ul>
                 </div>
 
@@ -34,7 +36,7 @@ const Footer = () => {
                     <ul class="mt-4">
                         <li><Link href="/" >About</Link></li>
                         <li><Link href="/gallery" >Gallery </Link></li>
-                        <li><Link href="/contact" >Conatct</Link></li>
+                        <li><Link href="/contact" >Contact</Link></li>
                     </ul>
                 </div>
 

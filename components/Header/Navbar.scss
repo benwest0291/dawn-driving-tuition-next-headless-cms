@@ -2,9 +2,12 @@ nav{
   background-color: $black;
   }
 
+  ul{
+     list-style-type: none;
+  }
+
   li a{
     color: $white;
-    list-style: none;
     font-size: 23px;
     font-family: $secFont;
     text-decoration: none;

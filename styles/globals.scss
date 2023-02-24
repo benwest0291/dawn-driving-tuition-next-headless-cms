@@ -1,8 +1,9 @@
 // Colours
+$lightBlack: #000;
 $black: #000;
 $white: #fff;
 $grey: #F7F7F7;
-$red: #ff0000;
+$red: #f70d1a;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
@@ -38,9 +39,16 @@ body{
 
 @import "../components/Header/Header.scss";
 @import "../components/Header/Navbar.scss";
+@import "../components/Masthead/Masthead.scss";
 @import "../components/Footer/Footer.scss";
 @import "../components/Footer/Strapline.scss";
 @import "../components/Footer/BaseFooter.scss";
+@import "../components/Text/Text.scss";
+@import "../components/Image/ImagePartial.scss";
+@import "../components/Blog/BlogCard.scss";
 
 
 //pages
+@import "../pages/policy.scss";
+@import "../pages/home.scss";
+@import "../pages/Blog/blog.scss";

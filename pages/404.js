@@ -2,8 +2,8 @@ import React from 'react'
 
 const notFoundPage = () => {
   return (
-    <div>
-          <h1> 404 page </h1>
+     <div className="container">
+          <h1>404</h1>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+.main__image{
+  object-fit: fill;
+  width: 90%;
+-webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+
+  @media(max-width: $sm-width) {
+       width: 100%;
+    }
+}

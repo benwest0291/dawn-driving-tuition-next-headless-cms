@@ -1,0 +1,57 @@
+.masthead {
+
+  background-color: $black;
+  padding-top: -20px;
+  width: 100%;
+  overflow: hidden;
+
+  &__text {
+    padding: 30px 10px 0 0;
+
+    @media(max-width: $lg-width) {
+      padding: 5px 10px;
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+    font-family: $secFont;
+    font-style: normal;
+    font-size: 40px;
+    color: $white;
+  }
+
+  p {
+    margin: 40px 0 50px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: $white;
+  }
+
+  a {
+    background-color: $red;
+    padding: 10px 30px;
+    font-weight: 900;
+    font-family: $secFont;
+    letter-spacing: 1px;
+    color: $white;
+    font-size: 28px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    @media(max-width: $md-width) {
+      padding: 10px 10px;
+    }
+  }
+
+
+  &__img{
+    width: 135%;
+    overflow: visable;
+    height: 90%;
+    object-fit: cover;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,11 +1,13 @@
-import React from 'react'
+import Masthead from "@/components/Masthead/Masthead"
 
 const galleryPage = () => {
-  return (
-    <div>
-        <h1>I am the gallery page</h1>
-    </div>
-  )
+  return (<>
+              <Masthead />
+               <main className="container">
+                  <h2>Gallery</h2>
+              </main>
+          </>
+     )
 }
 
 export default galleryPage

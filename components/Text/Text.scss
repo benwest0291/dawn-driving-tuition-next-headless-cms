@@ -1,0 +1,11 @@
+.text{
+   width: 90%;
+
+  @media(max-width: $sm-width) {
+       width: 100%;
+    }
+
+  h2{
+    font-family: $secFont;
+  }
+}
