@@ -20,26 +20,25 @@ export async function getStaticProps ()
   }
 }
 
-const contactPage = ( {contact} ) =>
-{
+const contactPage = ( {contact} ) => {
   return (
-    <>
-      <main className="container">
-         <div className="row">
-          <div className="col-12 col-md-6">
-            <h2 className="mt-5 mb-5">Area's covered</h2>
-            {contact.map(info => (
-              <p>{info.fields.textarea }</p>
-            ))}
-            <Map />
-          </div>
-          <div className="col-12 col-md-6">
-            <h2 className="mt-5 mb-5">Contact me </h2>
-              <ContactForm />
-          </div>
-        </div>
-      </main>
-    </>
+       <>
+          <main className="container">
+              <div className="row">
+                <div className="col-12 col-md-6">
+                  <h2 className="mt-5 mb-5">Area's covered</h2>
+                  {contact.map(info => (
+                    <p>{info.fields.textarea }</p>
+                  ))}
+                  <Map />
+                </div>
+                <div className="col-12 col-md-6">
+                  <h2 className="mt-5 mb-5">Contact me </h2>
+                    <ContactForm />
+                </div>
+              </div>
+            </main>
+       </>
   )
 }
 

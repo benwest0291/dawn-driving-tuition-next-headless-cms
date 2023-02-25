@@ -1,8 +1,7 @@
 import { createClient } from 'contentful'
 import Terms from '../components/terms';
 
-export async function getStaticProps ()
-{
+export async function getStaticProps (){
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -18,8 +17,7 @@ export async function getStaticProps ()
   }
 }
 
-const policyPage = ({ policy }) =>
-{
+const policyPage = ({ policy }) =>{
 console.log(policy)
   return (
     <section className="mt-5">
