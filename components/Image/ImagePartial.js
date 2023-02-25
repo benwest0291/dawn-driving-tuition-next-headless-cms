@@ -1,9 +1,11 @@
 import Image from "next/image";
 
-const ImagePartial = () => {
+const ImagePartial = ({info}) =>
+{
+  const { bodyImage } = info.fields
   return (
     <>
-      <Image src="/road.png" width={500} height={600} className="main__image mt-3" />
+      <Image src={"https:" + bodyImage.fields.file.url}  width={400} height={400} className="main__image mt-3" />
     </>
   )
 }

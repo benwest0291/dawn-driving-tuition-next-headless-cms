@@ -1,5 +1,17 @@
 .blog__card{
-  width: 290px;
+  width: 400px;
+  height: 510px;
   background-color: $black;
   color: $white;
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+
+a{
+  background-color: $red;
+  padding: 10px 50px;
+  color: $white;
+  text-decoration: none;
+  border-radius: 2px;
+  border: solid 1px $white;
+  }
 }

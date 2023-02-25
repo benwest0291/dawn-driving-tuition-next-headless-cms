@@ -6,7 +6,7 @@ $grey: #F7F7F7;
 $red: #f70d1a;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia&display=swap');
 $secFont: 'Sofia', cursive;
 $mainFont:  'Montserrat', sans-serif;
@@ -34,6 +34,12 @@ body{
   font-family: $mainFont
 }
 
+  h2, h5{
+      border-left: $red 5px solid;
+      padding-left: 5px;
+  }
+
+
 
 // components
 
@@ -41,14 +47,15 @@ body{
 @import "../components/Header/Navbar.scss";
 @import "../components/Masthead/Masthead.scss";
 @import "../components/Footer/Footer.scss";
-@import "../components/Footer/Strapline.scss";
 @import "../components/Footer/BaseFooter.scss";
 @import "../components/Text/Text.scss";
 @import "../components/Image/ImagePartial.scss";
 @import "../components/Blog/BlogCard.scss";
+@import "../components/ContactForm/ContactForm.scss";
+@import "../components/Banner/Banner.scss";
 
 
 //pages
 @import "../pages/policy.scss";
 @import "../pages/home.scss";
-@import "../pages/Blog/blog.scss";
+@import "../pages/Blog/grid.scss";

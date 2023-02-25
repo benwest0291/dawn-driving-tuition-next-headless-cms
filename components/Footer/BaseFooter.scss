@@ -1,13 +1,14 @@
 .footer__base{
   font-size: 18px;
   font-size: 18px;
+  background-color: $white;
+    border-top: $red 5px solid;
 
   span{
-    font-family: $secFont;
     font-size: 20px;
   }
 
   p{
-    font-family: $mainFont;
+    color: $black;
   }
 }

@@ -1,0 +1,40 @@
+.contact__form{
+  background-color: $black;
+  width: 90%;
+  height: 650px;
+  padding: 40px;
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+
+
+  &__inputs{
+        display: block;
+        margin-bottom: 20px;
+  }
+
+  span, p{
+    color: $white;
+  }
+
+  input {
+    width: 500px;
+    display: block;
+    padding: 8px;
+    border-radius: 3px;
+  }
+
+  textarea{
+    width: 500px;
+    height: 150px;
+  }
+}
+
+
+.contact__btn{
+  background-color: $red;
+  width: 500px;
+  padding: 10px 20px;
+  color: $white;
+  border: solid 2px $white;
+  border-radius: 3px;
+}

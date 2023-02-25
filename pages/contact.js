@@ -1,18 +1,41 @@
+import ContactForm from "@/components/ContactForm/ContactForm"
 import Masthead from "@/components/Masthead/Masthead"
+import { createClient } from 'contentful'
+import Map from "@/components/Map/Map"
 
-const contactPage = () =>
+export async function getStaticProps ()
+{
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  })
+
+  const res = await client.getEntries({ content_type: 'contactPage' })
+
+  return {
+    props: {
+      contact: res.items,
+       revalidate: 1
+    }
+  }
+}
+
+const contactPage = ( {contact} ) =>
 {
   return (
     <>
-      <Masthead />
       <main className="container">
          <div className="row">
           <div className="col-12 col-md-6">
-            Map
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptatem inventore cumque fugiat dolor voluptatibus perspiciatis? Architecto ipsum vel corporis neque ab sapiente eligendi dignissimos delectus, voluptatem deleniti pariatur distinctio.</p>
+            <h2 className="mt-5 mb-5">Area's covered</h2>
+            {contact.map(info => (
+              <p>{info.fields.textarea }</p>
+            ))}
+            <Map />
           </div>
-            <div className="col-12 col-md-6">
-              Contact form
+          <div className="col-12 col-md-6">
+            <h2 className="mt-5 mb-5">Contact me </h2>
+              <ContactForm />
           </div>
         </div>
       </main>

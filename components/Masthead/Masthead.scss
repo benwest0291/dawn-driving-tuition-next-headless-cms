@@ -4,6 +4,7 @@
   padding-top: -20px;
   width: 100%;
   overflow: hidden;
+  border-bottom: solid 5px $red;
 
   &__text {
     padding: 30px 10px 0 0;
@@ -15,7 +16,6 @@
 
   h2 {
     font-weight: 700;
-    font-family: $secFont;
     font-style: normal;
     font-size: 40px;
     color: $white;
@@ -29,16 +29,15 @@
   }
 
   a {
-    background-color: $red;
-    padding: 10px 30px;
-    font-weight: 900;
-    font-family: $secFont;
+    background-color: $black;
+    padding: 5px 30px;
     letter-spacing: 1px;
     color: $white;
-    font-size: 28px;
+    font-size: 18px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     text-decoration: none;
+    border: 2px solid $red;
 
     @media(max-width: $md-width) {
       padding: 10px 10px;
@@ -49,9 +48,9 @@
   &__img{
     width: 135%;
     overflow: visable;
-    height: 90%;
-    object-fit: cover;
-    height: 400px;
+    width: 130%;
+    height: 450px;
     margin-bottom: 50px;
+    object-fit: cover;
   }
 }

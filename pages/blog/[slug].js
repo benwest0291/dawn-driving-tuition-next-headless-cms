@@ -1,3 +1,6 @@
+import ImagePartial from "@/components/Image/ImagePartial"
+import Text from "../../components/Text/Text"
+
 const singleBlogPage = () => {
   return (
       <>
@@ -5,10 +8,10 @@ const singleBlogPage = () => {
         <h2>Single blog page</h2>
          <div className="row">
           <div className="col-12 col-md-6">
-                image
+              <Text />
           </div>
             <div className="col-12 col-md-6">
-              blog post
+              <ImagePartial />
           </div>
         </div>
       </main>
