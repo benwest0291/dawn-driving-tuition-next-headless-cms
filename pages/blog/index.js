@@ -1,8 +1,7 @@
 import BlogCard from '@/components/Blog/BlogCard'
 import { createClient } from 'contentful'
 
-export async function getStaticProps ()
-{
+export async function getStaticProps () {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -17,12 +16,10 @@ export async function getStaticProps ()
   }
 }
 
-const blogIndexPage = ({ blog }) =>
-{
-  console.log(blog)
+const blogIndexPage = ({ blog }) => {
+
   return (
     <>
-
       <main className="blog">
         <div className="container">
           <h2 className="mt-5 mb-5">From the blog</h2>

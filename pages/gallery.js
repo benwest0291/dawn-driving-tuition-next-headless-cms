@@ -31,7 +31,7 @@ const galleryPage = ({ gallery }) =>
                 <div className="global__grid">
                     {gallery.map(info => (
                       <div key={ info.id} className="global__card">
-                      <Image src={"https:" + info.fields.galleryImage.fields.file.url}  width={400} height={300} className="mt-3 mb-3 gallery__img" alt="gallery image" />
+                      <Image src={"https:" + info.fields.galleryImage.fields.file.url}  width={400} height={320} className="mt-3 mb-3 gallery__img" alt="gallery image" />
                         <h5>{info.fields.comment}</h5>
                       </div>
                       ))}

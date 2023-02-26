@@ -39,11 +39,8 @@ body{
       padding-left: 5px;
   }
 
-
-
 // components
 
-@import "../components/Header/Header.scss";
 @import "../components/Header/Navbar.scss";
 @import "../components/Masthead/Masthead.scss";
 @import "../components/Footer/Footer.scss";
@@ -52,10 +49,11 @@ body{
 @import "../components/Image/ImagePartial.scss";
 @import "../components/Blog/BlogCard.scss";
 @import "../components/ContactForm/ContactForm.scss";
-@import "../components/Banner/Banner.scss";
+@import "../components/Skeleton/Skeleton.scss";
 
 
 //pages
 @import "../pages/policy.scss";
-@import "../pages/home.scss";
 @import "../pages/Blog/grid.scss";
+@import "../pages/Blog/blog.scss";
+@import "../pages/404.scss";
