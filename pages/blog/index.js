@@ -25,9 +25,9 @@ const blogIndexPage = ({ blog }) => {
           <h2 className="mt-5 mb-5">From the blog</h2>
           <div className="global__grid">
                   {blog.map(post => (
-                    <div key={ post.id } className="global__card">
+                    <div key={ post.id } className="global__card mb-4">
                       <BlogCard
-                      post={post}
+                        post={post}
                       />
                       </div>
                   ))}

@@ -2,7 +2,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { createClient } from 'contentful'
 import Image from "next/image"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import Skeleton from '@/components/Skeleton/Skeleton';
+
 
 
 const client = createClient({
@@ -41,7 +41,7 @@ export async function getStaticProps ({ params }) {
 }
 
 const singleBlogPage = ({ blog }) =>{
-  if (!blog) return <Skeleton />
+
   const { title, mainContent, featuredImage } = blog.fields
 
   return (

@@ -10,7 +10,7 @@ const Navbar = () =>
       <div className="container">
         <div className="row">
             <div className="col-12 col-lg-6">
-            <Link href="/"><Image src="/logo.png" width={220} height={100} className="mt-5 mb-3" /></Link>
+            <Link href="/"><Image src="/logo.png" width={220} height={100} className="mt-4 mb-3" /></Link>
           </div>
           <div className="col-12 col-lg-6">
             <div className="d-flex justify-content-end">
