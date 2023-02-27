@@ -13,7 +13,7 @@ const Footer = () =>
         <div className="container">
            <div className="row">
               <div className="col-12 col-md-6 col-lg-3">
-                  <Image src="/logo.png" width={220} height={100} className="mt-3 mb-3" alt="logo"/>
+                  <Image src="/logo.jpeg" width={220} height={100} className="mt-3 mb-3" alt="logo"/>
                    <ul>
                       <li className="mb-4"><FaPhoneAlt className="phone__logo" /> 07980413955  </li>
                       <li className="mb-4"><AiOutlineMail className="mail__logo"/>   dawn@dawndriving.co.uk</li>
@@ -40,7 +40,7 @@ const Footer = () =>
                 </div>
 
                 <div className="col-12 col-md-6 col-lg-3 footer__responsive__lg">
-                  <h2>My Socails</h2>
+                  <h2>My Socials</h2>
                   <FaFacebookSquare className="facebook mt-4" />
                   <FaInstagram className="instagram mt-4" />
                 </div>
