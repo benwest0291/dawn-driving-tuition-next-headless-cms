@@ -1,68 +1,38 @@
-import { useState } from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 
-const ContactForm = () => {
+ const ContactForm = () => {
+   const form = useRef();
+   const [statusMessage, setStatusMessage] = useState("");
 
-  const [ firstName, setFirstName ] = useState('')
-  const [ lastName, setLastName ] = useState('')
-  const [ email, setEmail ] = useState('')
-  const [ message, setMessage ] = useState('')
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    }
+    emailjs.sendForm('service_81ss9ok', 'template_bgxfchw', form.current, 'iZnUotY3oBnh-h8Xu')
+      .then((result) => {
+        console.log(result.text);
+        setStatusMessage("Email sent success 😁");
+      }, (error) => {
+        console.log(error.text);
+        setStatusMessage(`${error.text} happened 😱`);
+      });
+    e.target.reset()
+  };
 
   return (
-    <div className="contact__form mt-5 mb-5">
-      <form onSubmit={handleSubmit}>
-        <div className="contact__form__inputs">
-            <label>
-              <span><h5>First name</h5></span>
-              <input
-                type="text"
-                onChange={(e) => setFirstName(e.target.value)}
-                value={firstName}
-                required
-              />
-              </label>
-          </div>
-        <div className="contact__form__inputs">
-            <label>
-              <span><h5>Last name</h5></span>
-                <input
-                  type="text"
-                  onChange={(e) => setLastName(e.target.value)}
-                  value={lastName}
-                  required
-                />
-              </label>
-          </div>
-        <div className="contact__form__inputs">
-            <label>
-              <span><h5>Email</h5></span>
-              <input
-                type="text"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-                required
-              />
-          </label>
-        </div>
-        <div className="contact__form__inputs">
-          <label>
-            <span><h5>Message</h5></span>
-            <textarea
-              type="text"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-              required
-            />
-          </label>
-        </div>
-                <p>We aim to respond within 24 hours.</p>
-        <button className="contact__btn">Submit</button>
-      </form>
-    </div>
-  )
-}
+    <form ref={form} onSubmit={sendEmail} className="contact__form mt-5 mb-5">
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input ctype="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <p>We aim to respond within 24 hours.</p>
+      <input className="contact__btn" type="submit" value="Send" />
+      <p className="mt-3">{statusMessage}</p>
+    </form>
+  );
+};
 
 export default ContactForm

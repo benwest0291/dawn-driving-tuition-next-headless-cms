@@ -1,5 +1,4 @@
 import ContactForm from "@/components/ContactForm/ContactForm"
-import Masthead from "@/components/Masthead/Masthead"
 import { createClient } from 'contentful'
 import Map from "@/components/Map/Map"
 
