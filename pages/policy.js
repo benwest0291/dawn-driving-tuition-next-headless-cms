@@ -18,7 +18,7 @@ export async function getStaticProps (){
 }
 
 const policyPage = ({ policy }) =>{
-console.log(policy)
+
   return (
     <section className="mt-5">
       <main className="container policy">

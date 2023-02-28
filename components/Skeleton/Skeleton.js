@@ -1,6 +1,7 @@
 import Layout from "../Layout"
 
 const Skeleton = () => {
+
   return (
     <div className="container">
       <h2 className="mt-5 mb-5">I am grabbing a new post</h2>

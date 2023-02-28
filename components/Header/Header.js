@@ -1,7 +1,6 @@
 import Navbar from "../Header/Navbar"
 
-const Header = () =>
-{
+const Header = () => {
   return (
     <header>
         <Navbar />

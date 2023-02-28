@@ -20,7 +20,8 @@ export async function getStaticProps ()
   }
 }
 
-const contactPage = ( {contact} ) => {
+const contactPage = ({ contact }) => {
+
   return (
        <>
           <main className="container">
@@ -39,7 +40,7 @@ const contactPage = ( {contact} ) => {
               </div>
             </main>
        </>
-  )
+    )
 }
 
 export default contactPage

@@ -2,7 +2,8 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Head from 'next/head'
 
-const Layout = ( {children } ) => {
+const Layout = ({ children }) => {
+
   return (
     <>
       <Header />

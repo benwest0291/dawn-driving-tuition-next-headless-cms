@@ -3,7 +3,6 @@ footer{
   color: $white;
   border-top: solid red 5px;
 
-
   @media(min-width: $sm-width){
     padding-top: 50px;
   }
@@ -13,6 +12,19 @@ footer{
   }
 
   .footer{
+
+        &__links{
+        color: $white;
+        text-decoration: none;
+        pointer: cursor;
+        font-size: 18px;
+        }
+
+        &__links:hover, :focus{
+        color: $red !important;
+        transition: 0.2s ease-in;
+        }
+
        &__responsive__lg{
           @media(min-width: $md-width){
              padding: 50px 0 50px 0;
@@ -29,14 +41,6 @@ footer{
     padding: 0;
   }
 
-  li a{
-    color: $white;
-    text-decoration: none;
-    pointer: cursor;
-    font-size: 18px;
-  }
-
-
   .mail__logo{
     font-size: 28px;
   }
@@ -50,4 +54,9 @@ footer{
   color: $white;
   font-size: 30px;
   margin: 0 10px 20px 0;
+
+  :hover, :focus{
+     color: $red !important;
+     transition: 0.2s ease-in;
+  }
 }

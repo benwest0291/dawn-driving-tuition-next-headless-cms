@@ -56,7 +56,7 @@ const singleBlogPage = ({ blog }) =>{
             <FaFacebookSquare className="facebook__blog mt-1 mb-4" />
             <FaInstagram className="instagram__blog mt-1 mb-4" />
             </div>
-            <Image src="/DVSA.png" width={300} height={30} className="mt-1" />
+            <Image src="/DVSA.png" width={300} height={30} className="mt-1 mb-3" />
           </div>
           <div className="col-12 col-md-6">
             <Image

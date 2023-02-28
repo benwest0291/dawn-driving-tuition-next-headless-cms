@@ -1,5 +1,4 @@
-const BaseFooter = () =>
-{
+const BaseFooter = () => {
   return (
     <>
        <div className="footer__base w-100 p-2 text-center">

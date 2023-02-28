@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from 'next/link'
 
 
-const Footer = () =>
-{
+const Footer = () => {
 
   return (
     <footer className="footer">
@@ -17,34 +16,30 @@ const Footer = () =>
                    <ul>
                       <li className="mb-4"><FaPhoneAlt className="phone__logo" /> 07980413955  </li>
                       <li className="mb-4"><AiOutlineMail className="mail__logo"/>   dawn@dawndriving.co.uk</li>
-                      <li className="footer__terms"><Link href="/policy">Terms and conditions</Link></li>
+                      <li className="footer__terms"><Link className="footer__links" href="/policy">Terms and conditions</Link></li>
                   </ul>
                 </div>
-
                 <div className="col-12 col-md-6 col-lg-3 footer__responsive__lg">
                     <h2>From the blog</h2>
                      <ul className="mt-4">
-                        <li><Link href="" >Blog title</Link></li>
-                        <li><Link href="" >Blog title</Link></li>
-                        <li><Link href="" >Blog title</Link></li>
+                        <li><Link className="footer__links" href="" >Blog title</Link></li>
+                        <li><Link className="footer__links"  href="" >Blog title</Link></li>
+                        <li><Link className="footer__links" href="" >Blog title</Link></li>
                     </ul>
                 </div>
-
                 <div className="col-12 col-md-6 col-lg-3 footer__responsive__lg">
                     <h2>Infomation</h2>
                     <ul className="mt-4">
-                        <li><Link href="/#about" >About</Link></li>
-                        <li><Link href="/gallery" >Gallery </Link></li>
-                        <li><Link href="/contact" >Contact</Link></li>
+                        <li><Link className="footer__links"  href="/#about" >About</Link></li>
+                        <li><Link className="footer__links"  href="/gallery" >Gallery </Link></li>
+                        <li><Link className="footer__links"  href="/contact" >Contact</Link></li>
                     </ul>
                 </div>
-
                 <div className="col-12 col-md-6 col-lg-3 footer__responsive__lg">
                   <h2>My Socials</h2>
                   <FaFacebookSquare className="facebook mt-4" />
                   <FaInstagram className="instagram mt-4" />
                 </div>
-
               </div>
             </div>
           <BaseFoorer />

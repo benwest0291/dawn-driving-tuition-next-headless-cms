@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-const ContactForm = () =>
-{
+const ContactForm = () => {
+
   const [ firstName, setFirstName ] = useState('')
   const [ lastName, setLastName ] = useState('')
   const [ email, setEmail ] = useState('')
   const [ message, setMessage ] = useState('')
 
- const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     }
 
@@ -15,7 +15,6 @@ const ContactForm = () =>
     <div className="contact__form mt-5 mb-5">
       <form onSubmit={handleSubmit}>
         <div className="contact__form__inputs">
-
             <label>
               <span><h5>First name</h5></span>
               <input
@@ -26,7 +25,6 @@ const ContactForm = () =>
               />
               </label>
           </div>
-
         <div className="contact__form__inputs">
             <label>
               <span><h5>Last name</h5></span>
@@ -38,7 +36,6 @@ const ContactForm = () =>
                 />
               </label>
           </div>
-
         <div className="contact__form__inputs">
             <label>
               <span><h5>Email</h5></span>
@@ -50,7 +47,6 @@ const ContactForm = () =>
               />
           </label>
         </div>
-
         <div className="contact__form__inputs">
           <label>
             <span><h5>Message</h5></span>

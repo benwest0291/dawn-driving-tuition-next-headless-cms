@@ -4,11 +4,10 @@
   height: 650px;
   padding: 40px;
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
 
 
   &__inputs{
-        display: block;
         margin-bottom: 20px;
   }
 
@@ -17,14 +16,13 @@ box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
   }
 
   input {
-    width: 410px;
-    display: block;
+    width: 250%;
     padding: 8px;
     border-radius: 3px;
   }
 
   textarea{
-    width: 410px;
+    width: 260%;
     height: 150px;
   }
 }
@@ -32,7 +30,7 @@ box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
 
 .contact__btn{
   background-color: $red;
-  width: 410px;
+  width: 100%;
   padding: 10px 20px;
   color: $white;
   border: solid 2px $white;

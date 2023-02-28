@@ -3,8 +3,7 @@ import Image from "next/image"
 
 import { createClient } from 'contentful'
 
-export async function getStaticProps ()
-{
+export async function getStaticProps () {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -20,9 +19,7 @@ export async function getStaticProps ()
   }
 }
 
-const galleryPage = ({ gallery }) =>
-{
-  console.log(gallery)
+const galleryPage = ({ gallery }) => {
   return (
             <>
               <main className="blog">
@@ -30,8 +27,8 @@ const galleryPage = ({ gallery }) =>
                 <h2 className="mt-5 mb-5">Gallery</h2>
                 <div className="global__grid">
                     {gallery.map(info => (
-                      <div key={ info.id} className="global__card">
-                      <Image src={"https:" + info.fields.galleryImage.fields.file.url}  width={400} height={380} className="mt-3 mb-3 gallery__img" alt="gallery image" />
+                      <div key={ info.id } className="global__card">
+                      <Image src={"https:" + info.fields.galleryImage.fields.file.url} alt="gallery image" width={400} height={380} className="mt-3 mb-3 gallery__img"  />
                         <h5>{info.fields.comment}</h5>
                       </div>
                       ))}

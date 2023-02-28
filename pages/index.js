@@ -20,16 +20,18 @@ export async function getStaticProps (){
   }
 }
 
-export default function HomePage ({ home }){
-    console.log(home)
+export default function HomePage ({ home }) {
+
   return (
     <>
+      {home.map(info => (
 
-           {home.map(info => (
-             <Masthead
-               info={info}
+        <Masthead
+            key={info.id}
+            info={info}
              />
-           ))}
+          ))}
+
             <main className="container mt-5 mb-5" id="about">
               <div className="row flip">
                 {home.map(info => (
@@ -39,13 +41,15 @@ export default function HomePage ({ home }){
                     />
                 </div>
                 ))}
+
                   {home.map(info => (
                 <div key={info.id} className="col-12 col-lg-6">
                       <ImagePartial
                         info={info}
                       />
                     </div>
-                ))}
+                  ))}
+
               </div>
             </main>
         </>
