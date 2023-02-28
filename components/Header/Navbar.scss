@@ -26,3 +26,37 @@ nav{
      transition: 0.5s ease-in;
   }
 }
+
+.hamburger-react{
+  color: $white;
+  margin-top: 72px;
+
+  @media(min-width: $md-width){
+    display: none;
+  }
+}
+
+.active{
+  display: block !important;
+}
+
+.nav__bar__mobile{
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+
+  @media(max-width: $md-width){
+      flex-direction: column !important;
+      text-align: center;
+      align-items: center;
+      display: none;
+    }
+}
+
+.socials{
+   margin-top: -140px;
+
+  @media(max-width: $md-width){
+        margin-top: 0px;
+    }
+}

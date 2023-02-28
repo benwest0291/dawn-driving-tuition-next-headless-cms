@@ -60,6 +60,7 @@ const singleBlogPage = ({ blog }) =>{
           </div>
           <div className="col-12 col-md-6">
             <Image
+              alt="blog article image"
               src={'http:' + featuredImage.fields.file.url}
               width={600} height={500}
               className="mb-5 blog__image"
