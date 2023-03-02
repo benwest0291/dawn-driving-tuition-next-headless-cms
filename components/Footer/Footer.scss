@@ -1,7 +1,7 @@
 footer{
-  background-color: $black;
+  background: rgb(247,13,26);
+  background: linear-gradient(10deg, rgba(247,13,26,1) 0%, rgba(0,0,0,1) 39%);
   color: $white;
-  border-top: solid red 5px;
 
   @media(min-width: $sm-width){
     padding-top: 50px;
@@ -13,10 +13,19 @@ footer{
 
   .footer{
 
+      &__contact{
+       margin-left: 10px;
+       font-size: 18px;
+      }
+
+        &__contact-email{
+       margin-left: 6px;
+       font-size: 18px;
+      }
+
         &__links{
         color: $white;
         text-decoration: none;
-        pointer: cursor;
         font-size: 18px;
         }
 
@@ -42,7 +51,7 @@ footer{
   }
 
   .mail__logo{
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .phone__logo{

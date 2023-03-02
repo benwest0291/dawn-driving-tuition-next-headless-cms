@@ -1,5 +1,4 @@
-import { FaFacebookSquare, FaInstagram, FaPhoneAlt } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { FaFacebookSquare, FaInstagram, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import BaseFoorer from './BaseFooter'
 import Image from "next/image";
 import Link from 'next/link'
@@ -12,12 +11,13 @@ const Footer = () => {
         <div className="container">
            <div className="row">
               <div className="col-12 col-md-6 col-lg-3">
-                  <Image src="/logo.jpeg" width={220} height={100} className="mt-3 mb-3" alt="logo"/>
+                  <Image src="/logo.png" width={220} height={100} className="mt-3 mb-3" alt="logo"/>
                    <ul>
-                      <li className="mb-4"><FaPhoneAlt className="phone__logo" /> 07980413955  </li>
-                      <li className="mb-4"><AiOutlineMail className="mail__logo"/>   dawn@dawndriving.co.uk</li>
+                      <li className="mb-4"><FaPhoneAlt className="phone__logo" /><span className="footer__contact">07980413955</span></li>
+                      <li className="mb-4"><FaEnvelope className="mail__logo"/> <span className="footer__contact-email">dawn@dawndriving.co.uk</span></li>
                       <li className="footer__terms"><Link className="footer__links" href="/policy">Terms and conditions</Link></li>
                   </ul>
+
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 footer__responsive__lg">
                     <h2>From the blog</h2>

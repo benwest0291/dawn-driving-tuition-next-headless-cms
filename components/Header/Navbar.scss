@@ -1,5 +1,6 @@
 nav{
-  background-color: $black;
+  background: rgb(0,0,0);
+  background: linear-gradient(10deg, rgba(0,0,0,1) 53%, rgba(247,13,26,1) 100%);
 
   ul{
      list-style-type: none;
