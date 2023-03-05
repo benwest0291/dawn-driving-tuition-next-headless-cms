@@ -14,7 +14,7 @@ export async function getStaticProps () {
   return {
     props: {
       gallery: res.items,
-       revalidate: 1
+      revalidate: 10
     }
   }
 }

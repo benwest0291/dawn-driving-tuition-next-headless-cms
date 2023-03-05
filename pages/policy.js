@@ -12,7 +12,7 @@ export async function getStaticProps (){
   return {
     props: {
       policy: res.items,
-       revalidate: 1
+      revalidate: 10
     }
   }
 }
