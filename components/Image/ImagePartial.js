@@ -5,7 +5,7 @@ const ImagePartial = ({info}) => {
 
   return (
     <>
-      <Image src={"https:" + bodyImage.fields.file.url} alt="homepage main image" width={400} height={400} className="main__image mt-3" />
+      <Image alt="Dawn driving main image" src={"https:" + bodyImage.fields.file.url} width={400} height={400} className="main__image mt-3" />
     </>
   )
 }

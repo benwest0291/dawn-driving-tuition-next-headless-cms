@@ -28,49 +28,51 @@ export default function HomePage ({ home }) {
             <>
               {home.map(info => (
                 <Masthead
-                    key={info.id}
+                    key={ info.sys.id }
                     info={info}
-                    />
+                 />
               ))}
-          <main>
-            <div className="container mt-5 mb-5" id="about">
-              <div className="row flip">
-                  {home.map(info => (
-                <div key={ info.id } className="col-12 col-lg-6">
-                    <Text
-                    info={info}
-                    />
-                </div>
-                ))}
-                  {home.map(info => (
-                <div key={info.id} className="col-12 col-lg-6">
-                    <ImagePartial
-                      info={info}
-                   />
-                    </div>
-                  ))}
+              <main>
+                <div className="container mt-5 mb-5" id="about">
+                    <div className="row flip">
+                        <div className="col-12 col-lg-6">
+                          {home.map(info => (
+                            <Text
+                              key={ info.sys.id }
+                              info={info}
+                              />
+                          ))}
+                        </div>
+                        <div className="col-12 col-lg-6">
+                          {home.map(info => (
+                           <ImagePartial
+                              key={info.sys.id}
+                              info={info}
+                            />
+                          ))}
+                        </div>
+                   </div>
               </div>
-          </div>
               <Strapline
                 text={ "Book your first driving lessions today" }
                />
-          <div className="container">
-              <div className="global__grid">
-                  <InfoCard
-                    heading={"Are you a beginner?"}
-                    infomation={"My lessions are designed to ensure you become a safe and confident driver"}
-                  />
-                  <InfoCard
-                    heading={"Failed driving test?"}
-                    infomation={"I will help you figure out what went wrong the first time around"}
-                  />
-                  <InfoCard
-                    heading={"Need a Refresher?"}
-                    infomation={"At Dawns driving tuition my refersher courses cover a wide rangle of driving situations"}
-                  />
-          </div>
-        </div>
+                <div className="container">
+                    <div className="global__grid">
+                        <InfoCard
+                          heading={"Are you a beginner?"}
+                          infomation={"My lessions are designed to ensure you become a safe and confident driver"}
+                        />
+                        <InfoCard
+                          heading={"Failed driving test?"}
+                          infomation={"I will help you figure out what went wrong the first time around"}
+                        />
+                        <InfoCard
+                          heading={"Need a Refresher?"}
+                          infomation={"At Dawns driving tuition my refersher courses cover a wide rangle of driving situations"}
+                        />
+                </div>
+            </div>
         </main>
-        </>
-      )
-  }
+    </>
+  )
+}

@@ -27,7 +27,7 @@ const galleryPage = ({ gallery }) => {
                 <h2 className="mt-5 mb-5">Gallery</h2>
                 <div className="global__grid">
                     {gallery.map(info => (
-                      <div key={ info.id } className="global__card">
+                      <div key={ info.sys.id  } className="global__card">
                       <Image src={"https:" + info.fields.galleryImage.fields.file.url} alt="gallery image" width={400} height={380} className="mt-3 mb-3 gallery__img"  />
                         <h5>{info.fields.comment}</h5>
                       </div>

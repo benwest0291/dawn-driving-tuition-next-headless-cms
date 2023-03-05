@@ -29,7 +29,7 @@ const contactPage = ({ contact }) => {
                 <div className="col-12 col-md-6">
                   <h2 className="mt-5 mb-5">Area's covered</h2>
                   {contact.map(info => (
-                    <p>{info.fields.textarea }</p>
+                    <p key={info.sys.id }>{info.fields.textarea }</p>
                   ))}
                    <div className="contacts">
                       <p><FaPhoneAlt className="phone__contact" /><span className="p-3">07980413955</span></p>

@@ -12,7 +12,7 @@ const Masthead = ({ info }) => {
               <div className="col-12 col-lg-6">
                 <div className="masthead__text">
                     <h1>{ mastheadTitle } </h1>
-                    <p>{mastheadText}</p>
+                    <p>{ mastheadText }</p>
                     <div className="mb-3">
                     <Link className="masthead__btn mb-5" href="/#about">About</Link>
                     <Link className="masthead__btn mb-5" href="/contact">Contact</Link>
@@ -20,7 +20,7 @@ const Masthead = ({ info }) => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 mt-2">
-                  <Image src={ "https:" + mastheadImage.fields.file.url }  width={400} height={400} className="masthead__img" alt={ mastheadTitle } />
+                  <Image alt={ mastheadTitle }  src={ "https:" + mastheadImage.fields.file.url }  width={400} height={400} className="masthead__img" />
               </div>
             </div>
           </div>
