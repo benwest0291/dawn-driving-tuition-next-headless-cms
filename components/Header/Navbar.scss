@@ -43,7 +43,7 @@ nav{
 
 .nav__bar__mobile{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: row;
 
   @media(max-width: $md-width){

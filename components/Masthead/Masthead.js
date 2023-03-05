@@ -11,7 +11,7 @@ const Masthead = ({ info }) => {
             <div className="row">
               <div className="col-12 col-lg-6">
                 <div className="masthead__text">
-                    <h2>{ mastheadTitle } </h2>
+                    <h1>{ mastheadTitle } </h1>
                     <p>{mastheadText}</p>
                     <div className="mb-3">
                     <Link className="masthead__btn mb-5" href="/#about">About</Link>

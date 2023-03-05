@@ -1,7 +1,7 @@
 .contact__form{
   background-color: $black;
-  width: 90%;
-  height: 560px;
+  width: 100%;
+  height: 650px;
   padding: 40px;
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
@@ -31,7 +31,7 @@
 
   textarea{
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
 }
 

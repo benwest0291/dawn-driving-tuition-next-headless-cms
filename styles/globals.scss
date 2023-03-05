@@ -34,10 +34,40 @@ body{
   font-family: $mainFont
 }
 
-  h2, h5{
+  h1, h2, h5{
       border-left: $red 5px solid;
       padding-left: 5px;
   }
+
+// buttons
+
+.btn__main{
+    background-color: $black;
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    color: $white;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 2px solid $red;
+
+      &:hover, &:focus{
+     background-color: $white;
+     color: $black;
+     transition: 0.5s ease-in;
+    }
+}
+
+  .secondary__btn{
+    background-color: $red;
+    padding: 10px 50px;
+    color: $white;
+    text-decoration: none;
+    border-radius: 2px;
+    border: solid 1px $white;
+    }
+
 
 // components
 
@@ -50,6 +80,8 @@ body{
 @import "../components/Blog/BlogCard.scss";
 @import "../components/ContactForm/ContactForm.scss";
 @import "../components/Skeleton/Skeleton.scss";
+@import "../components/Strapline/Strapline.scss";
+@import "../components/InfoCard/InfoCard.scss";
 
 
 //pages

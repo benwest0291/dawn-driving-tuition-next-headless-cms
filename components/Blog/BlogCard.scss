@@ -1,10 +1,12 @@
 .blog__card{
   width: 400px;
   height: 102%;
-  background-color: $black;
+  background: rgb(0,0,0);
+  background: linear-gradient(10deg, rgba(0,0,0,1) 18%, rgba(247,13,26,1) 81%);
   color: $white;
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+  transition: 0.5s;
 
   a{
     background-color: $red;
@@ -14,4 +16,8 @@
     border-radius: 2px;
     border: solid 1px $white;
     }
+}
+
+.blog__card:hover, .blog__card:focus{
+   margin-top: -15px;
 }

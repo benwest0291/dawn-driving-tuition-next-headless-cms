@@ -8,7 +8,7 @@ const BaseFooter = () => {
                         <p><span>Dawn driving tuition</span> &copy; {new Date().getFullYear()} </p>
                     </div>
                     <div className="col-12 col-md-6 pt-2">
-                        <p>Website by Ben West</p>
+                        <p>Site by Ben West</p>
                     </div>
                 </div>
             </div>
