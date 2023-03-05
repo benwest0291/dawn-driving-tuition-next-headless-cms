@@ -3,8 +3,6 @@ import { createClient } from 'contentful'
 import Image from "next/image"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
-
-
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -15,7 +13,7 @@ export const getStaticPaths = async () => {
     content_type: 'blog'
   })
 
-  const paths = res.items.map(item => {
+ const paths = res.items.map(item => {
     return {
       params: { slug: item.fields.slug }
       }
@@ -23,7 +21,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true
+    fallback: false
   }
 }
 
