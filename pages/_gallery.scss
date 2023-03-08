@@ -1,0 +1,11 @@
+.gallery{
+
+  &__image{
+    width: 100%;
+    height: 400px;
+
+    @media(min-width: $md-width){
+         height: 300px;
+    }
+  }
+}

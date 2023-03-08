@@ -33,7 +33,7 @@ nav{
   color: $white;
   margin-top: 72px;
 
-  @media(min-width: $md-width){
+  @media(min-width: $sm-width){
     display: none;
   }
 }

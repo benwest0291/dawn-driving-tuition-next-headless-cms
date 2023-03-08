@@ -10,12 +10,11 @@ export async function getStaticProps (){
   const res = await client.getEntries({ content_type: 'termsAndConditionsPage' })
 
   return {
-    props: {
-      policy: res.items,
+    props: { policy: res.items },
       revalidate: 10
     }
   }
-}
+
 
 const policyPage = ({ policy }) =>{
 

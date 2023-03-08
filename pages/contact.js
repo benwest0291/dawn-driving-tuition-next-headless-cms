@@ -13,12 +13,10 @@ export async function getStaticProps ()
   const res = await client.getEntries({ content_type: 'contactPage' })
 
   return {
-    props: {
-      contact: res.items,
+    props: { contact:  res.items },
       revalidate: 10
     }
   }
-}
 
 const contactPage = ({ contact }) => {
 
