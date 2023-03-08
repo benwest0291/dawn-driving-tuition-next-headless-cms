@@ -45,18 +45,18 @@ const singleBlogPage = ({ blog }) =>{
   return (
       <>
       <main className="container">
-        <h2 className="mt-5 mb-5">{title}</h2>
+        <h2 className="mt-5 mb-3">{title}</h2>
          <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-7">
             {documentToReactComponents(mainContent)}
             <div>
             <h5 className="mt-4">Share this article on </h5>
             <FaFacebookSquare className="facebook__blog mt-1 mb-4" />
             <FaInstagram className="instagram__blog mt-1 mb-4" />
             </div>
-            <Image src="/DVSA.png" width={300} height={30} className="mt-1 mb-3" />
+            <Image src="/DVSA.jpg" width={160} height={100} className="mt-1 mb-3" />
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-5">
             <Image
               alt="blog article image"
               src={'http:' + featuredImage.fields.file.url}

@@ -25,7 +25,7 @@ nav{
   a:hover, a:focus{
     color: $white;
     color: $red;
-    transition: ease-in .4s;
+    transition: ease-in-out;
   }
 }
 
@@ -40,25 +40,29 @@ nav{
 
 .active{
   display: block !important;
+
+    @media(min-width: $sm-width){
+       display: flex !important;
+   }
 }
 
-.nav__bar__mobile{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+.nav__bar{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  display: none;
+  margin-top: 80px;
 
-  @media(max-width: $md-width){
-      flex-direction: column !important;
-      text-align: center;
-      align-items: center;
-      display: none;
+
+  @media(min-width: $sm-width){
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row !important;
+    margin-top: 80px;
+    margin-top: 5px;
     }
 }
 
-.socials{
-   margin-top: -140px;
-
-  @media(max-width: $md-width){
-        margin-top: 0px;
-    }
+.socials__nav{
+  margin-top: -140px;
 }

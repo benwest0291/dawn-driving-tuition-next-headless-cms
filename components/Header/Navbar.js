@@ -23,15 +23,15 @@ const Navbar = () => {
             <Hamburger onClick={ navBar } className="hamburger" toggled={isOpen} toggle={setOpen} />
           </div>
           <div className="">
-            <div className="d-flex justify-content-end socials">
+            <div className="d-flex justify-content-end socials__nav">
               <FaFacebookSquare className="facebook mt-4" />
               <FaInstagram className="instagram mt-4" />
             </div>
-            <ul className={ `nav__bar__mobile ${toggleMenu}`}>
-              <li className="nav__link m-2"><Link href="/#about">About</Link></li>
-              <li className="nav__link  m-2"><Link href="/gallery">Gallery</Link></li>
-              <li className="nav__link  m-2"><Link href="/blog">Blog</Link> </li>
-              <li className="nav__link m-2"><Link href="/contact">Contact</Link> </li>
+            <ul className={ `nav__bar ${toggleMenu}`}>
+              <li onClick={ navBar }  className="nav__link m-2"><Link href="/#about">About</Link></li>
+              <li onClick={ navBar }  className="nav__link  m-2"><Link href="/gallery">Gallery</Link></li>
+              <li onClick={ navBar }  className="nav__link  m-2"><Link href="/blog">Blog</Link> </li>
+              <li onClick={ navBar }  className="nav__link m-2"><Link href="/contact">Contact</Link> </li>
             </ul>
           </div>
         </div>
