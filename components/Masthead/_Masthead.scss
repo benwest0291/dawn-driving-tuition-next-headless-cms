@@ -3,7 +3,6 @@
   background-color: $black;
   padding-top: -20px;
   width: 100%;
-  overflow: hidden;
   color: $white;
 
   &__text {
@@ -37,7 +36,7 @@
 
   a {
     background-color: $black;
-    padding: 5px 30px;
+    padding: 10px 40px;
     letter-spacing: 1px;
     color: $white;
     font-size: 18px;
@@ -45,17 +44,11 @@
     border-radius: 3px;
     text-decoration: none;
     border: 2px solid $red;
-
-    @media(max-width: $md-width) {
-      padding: 10px 10px;
-    }
   }
 
 
   &__img{
-    width: 135%;
-    overflow: visable;
-    width: 130%;
+    width: 100%;
     height: 450px;
     margin-bottom: 50px;
     object-fit: cover;
