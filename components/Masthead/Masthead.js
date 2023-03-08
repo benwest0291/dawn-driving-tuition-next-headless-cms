@@ -9,9 +9,9 @@ const Masthead = ({ info }) => {
       <section className="masthead">
         <div className="container">
             <div className="row">
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-md-7">
                 <div className="masthead__text">
-                    <h1>{ mastheadTitle } </h1>
+                    <h1 className="h2">{ mastheadTitle } </h1>
                     <p>{ mastheadText }</p>
                     <div className="mb-3">
                     <Link className="masthead__btn mb-5" href="/#about">About</Link>
@@ -19,8 +19,8 @@ const Masthead = ({ info }) => {
                    </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-6 mt-2">
-                  <Image alt={ mastheadTitle }  src={ "https:" + mastheadImage.fields.file.url }  width={400} height={400} className="masthead__img" />
+              <div className="col-12 col-md-5 mt-3">
+                  <Image alt={ mastheadTitle }  src={ "https:" + mastheadImage.fields.file.url }  width={200} height={200} className="masthead__img" />
               </div>
             </div>
           </div>

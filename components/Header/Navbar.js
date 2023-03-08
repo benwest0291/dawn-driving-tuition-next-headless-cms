@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
             <div className="col-12 col-lg-6 d-flex justify-content-between">
-            <Link href="/"><Image alt="Dawn driving tuition logo" src="/logo.png" width={220} height={100} className="mt-4 mb-3" /></Link>
+            <Link href=" / "><Image alt="Dawn driving tuition logo" src="/logo.png" width={220} height={100} className="mt-4 mb-3" /></Link>
             <Hamburger onClick={ navBar } className="hamburger" toggled={isOpen} toggle={setOpen} />
           </div>
           <div className="">
