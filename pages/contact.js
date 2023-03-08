@@ -1,4 +1,4 @@
-import { FaFacebookSquare, FaInstagram, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import ContactForm from "@/components/ContactForm/ContactForm"
 import { createClient } from 'contentful'
 import Map from "@/components/Map/Map"
@@ -36,13 +36,6 @@ const contactPage = ({ contact }) => {
                       <p className="mb-4"><FaEnvelope className="mail__contact" /><span className="p-3">dawn@dawndriving.co.uk</span></p>
                   </div>
                  <Map />
-                  <h5 className="mt-3">Follow me on:</h5>
-                    <FaFacebookSquare
-                      className="facebook__contact mt-2 mb-4"
-                    />
-                    <FaInstagram
-                      className="instagram__contact mt-2 mb-4"
-                    />
                 </div>
                 <div className="col-12 col-md-6">
                   <h2 className="mt-5 mb-5">Contact me </h2>

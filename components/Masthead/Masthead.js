@@ -20,7 +20,7 @@ const Masthead = ({ info }) => {
                 </div>
               </div>
               <div className="col-12 col-md-5 mt-3">
-                  <Image alt={ mastheadTitle }  src={ "https:" + mastheadImage.fields.file.url }  width={200} height={200} className="masthead__img" />
+                  <Image alt={ mastheadTitle }  src={ "https:" + mastheadImage.fields.file.url }  width={500} height={500} className="masthead__img" />
               </div>
             </div>
           </div>

@@ -24,7 +24,8 @@ nav{
 
   a:hover, a:focus{
     color: $white;
-     border-bottom: $white 2px solid;
+    color: $red;
+    transition: ease-in .4s;
   }
 }
 

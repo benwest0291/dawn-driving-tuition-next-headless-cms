@@ -41,7 +41,7 @@ export default function HomePage ({ home }) {
                               />
                           ))}
                         </div>
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-lg-5">
                           {home.map(info => (
                            <ImagePartial
                               key={info.sys.id}

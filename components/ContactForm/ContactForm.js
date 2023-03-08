@@ -28,7 +28,7 @@ import { useState } from 'react';
       <input ctype="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <p>We aim to respond within 24 hours.</p>
+      <p>I aim to respond within 24 hours.</p>
       <input className="contact__btn" type="submit" value="Send" />
       <p className="mt-3">{statusMessage}</p>
     </form>

@@ -28,7 +28,7 @@
   }
 
   p {
-    margin: 20px 0;;
+    margin: 20px 20px 20px 0;
     font-size: 14px;
     line-height: 25px;
     color: $white;
@@ -50,7 +50,7 @@
     width: 100%;
     height: 300px;
     margin-bottom: 50px;
-    object-fit: center;
+    object-fit: cover;
     margin-top: -8px;
   }
 }

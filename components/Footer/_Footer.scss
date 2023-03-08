@@ -4,29 +4,29 @@ footer{
   color: $white;
 
   @media(min-width: $sm-width){
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .footer__terms, h2{
-    font-size: 22px;
+      font-size: $font-s;
   }
 
   .footer{
 
       &__contact{
        margin-left: 10px;
-       font-size: 18px;
+       font-size: 14px;
       }
 
         &__contact-email{
        margin-left: 6px;
-       font-size: 18px;
+       font-size: 14px;
       }
 
         &__links{
         color: $white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
         }
 
         &__links:hover, :focus{
@@ -36,10 +36,10 @@ footer{
 
        &__responsive__lg{
           @media(min-width: $md-width){
-             padding: 50px 0 50px 0;
+             padding: 70px 0 70px 0;
 
           @media(min-width: $sm-width){
-            padding: 70px 0 120px 0;
+            padding: 70px 0 40px 0;
         }
       }
     }
@@ -61,7 +61,7 @@ footer{
 
 .facebook , .instagram{
   color: $white;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0 10px 20px 0;
 
   :hover, :focus{
