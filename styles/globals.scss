@@ -32,6 +32,8 @@ $sm-width: 550px;
 body{
   margin: 0;
   font-family: $mainFont;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
   h1, h2, h5{
