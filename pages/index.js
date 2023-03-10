@@ -30,7 +30,7 @@ export default function HomePage ({ home }) {
                  />
               ))}
               <main>
-                <div className="container mt-5 mb-5" id="about">
+                <div className="container mt-2 mb-5" id="about">
                     <div className="row flip">
                         <div className="col-12 col-lg-7">
                           {home.map(info => (
