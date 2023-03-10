@@ -13,7 +13,9 @@ export async function getStaticProps (){
     props: { policy: res.items },
       revalidate: 10
     }
-  }
+}
+
+
 
 
 const policyPage = ({ policy }) =>{
