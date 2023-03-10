@@ -14,7 +14,7 @@ const Masthead = ({ info }) => {
                     <h1 className="h2">{ mastheadTitle } </h1>
                     <p>{ mastheadText }</p>
                     <div className="mb-3">
-                    <Link className="masthead__btn mb-5" href="/#about">About</Link>
+                    <Link className="masthead__btn-solid mb-5" href="/#about">About</Link>
                     <Link className="masthead__btn mb-5" href="/contact">Contact</Link>
                    </div>
                 </div>

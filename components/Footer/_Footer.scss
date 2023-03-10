@@ -3,6 +3,7 @@ footer{
   background: linear-gradient(10deg, rgba(247,13,26,1) 0%, rgba(0,0,0,1) 39%);
   color: $white;
 
+
   @media(min-width: $sm-width){
     padding-top: 20px;
   }
@@ -66,6 +67,7 @@ footer{
 
   :hover, :focus{
      color: $red !important;
-     transition: 0.2s ease-in;
+     transition: 0.7s ease-in;
+     cursor: pointer;
   }
 }

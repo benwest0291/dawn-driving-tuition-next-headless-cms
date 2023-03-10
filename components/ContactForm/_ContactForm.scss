@@ -5,6 +5,7 @@
   padding: 20px;
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
+  border-radius: 2%;
 
 
   &__inputs{
@@ -31,7 +32,7 @@
 
   textarea{
     width: 100%;
-    height: 250px;
+    height: 280px;
   }
 }
 
@@ -42,5 +43,5 @@
   padding: 10px 20px;
   color: $white;
   border: solid 2px $white;
-  border-radius: 3px;
+  border-radius: 5px;
 }

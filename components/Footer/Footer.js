@@ -8,12 +8,12 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-        <div className="container p-2 p-3">
+        <div className="container pb-3">
            <div className="row">
               <div className="col-12 col-md-4 al">
                   <Image alt="Dawn driving tuition logo" src="/logo.svg" width={180} height={100} className="mt-3 mb-3"/>
                    <ul>
-                      <li className="mb-1"><FaPhoneAlt className="phone__logo" /><span className="footer__contact">07980413955</span></li>
+                      <li className="mb-2"><FaPhoneAlt className="phone__logo" /><span className="footer__contact">07980413955</span></li>
                       <li className="mb-4"><FaEnvelope className="mail__logo"/> <span className="footer__contact-email">dawn@dawndriving.co.uk</span></li>
                       <li className="footer__terms"><Link className="footer__links" href="/policy">Terms and conditions</Link></li>
                   </ul>

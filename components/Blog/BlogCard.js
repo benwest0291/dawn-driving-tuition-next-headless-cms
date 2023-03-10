@@ -11,7 +11,7 @@ const BlogCard = ({ post }) => {
         <div className="p-2">
           <h2>{title}</h2>
           <p className="mb-4">{ blogDescription }</p>
-          <Link className="btn__main"href={"/blog/" + slug }>View post</Link>
+          <Link className="btn__main" href={"/blog/" + slug }>View post</Link>
         </div>
       </div>
     )
