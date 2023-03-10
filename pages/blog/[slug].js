@@ -51,10 +51,7 @@ export async function getStaticProps ({ params }) {
 
 const singleBlogPage = ({ blog }) => {
 
-  if (!blog) return
-  <Spinner
-      errorMessage={"Loading"}
-  />
+  if (!blog) return <Spinner errorMessage={"Loading"} />
 
   const { title, mainContent, featuredImage } = blog.fields
 
