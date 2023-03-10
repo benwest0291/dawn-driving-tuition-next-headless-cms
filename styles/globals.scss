@@ -1,4 +1,5 @@
 // Colours
+
 $lightBlack: #000;
 $black: #000;
 $white: #fff;
@@ -7,6 +8,7 @@ $red: #f70d1a;
 // $newGrey: #545b62;
 
 // Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia&display=swap');
 $secFont: 'Sofia', cursive;
 $mainFont:  'Montserrat', sans-serif;
@@ -36,39 +38,39 @@ body{
   width: 100vw;
 }
 
-  h1, h2, h5{
-      border-left: $red 5px solid;
-      padding-left: 5px;
-  }
+h1, h2, h5{
+  border-left: $red 5px solid;
+  padding-left: 5px;
+}
 
 // buttons
 
 .btn__main{
-    background-color: $black;
-    padding: 5px 30px;
-    letter-spacing: 1px;
-    color: $white;
-    font-size: 18px;
-    margin-right: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 2px solid $red;
+  background-color: $black;
+  padding: 5px 30px;
+  letter-spacing: 1px;
+  color: $white;
+  font-size: 18px;
+  margin-right: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid $red;
 
-      &:hover, &:focus{
-     background-color: $white;
-     color: $black;
-     transition: 0.5s ease-in;
-    }
+&:hover, &:focus{
+  background-color: $white;
+  color: $black;
+  transition: 0.5s ease-in;
+ }
 }
 
-  .secondary__btn{
-    background-color: $red;
-    padding: 10px 50px;
-    color: $white;
-    text-decoration: none;
-    border-radius: 2px;
-    border: solid 1px $white;
-    }
+.secondary__btn{
+  background-color: $red;
+  padding: 10px 50px;
+  color: $white;
+  text-decoration: none;
+  border-radius: 2px;
+  border: solid 1px $white;
+}
 
 
 // components
@@ -85,6 +87,7 @@ body{
 
 
 //pages
+
 @import "../pages/policy.scss";
 @import "../pages/blog/grid.scss";
 @import "../pages/blog/blog.scss";
