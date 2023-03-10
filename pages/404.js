@@ -16,7 +16,7 @@ const notFoundPage = () => {
   return (
      <div className="container mt-5 mb-5">
         <p className="not__found__heading mt-5 mb-5 text-center">404</p>
-           <p className="h2 text-center"> Oopps.... sorry hat page cannot be found 🤔</p>
+           <p className="h2 text-center"> Oopps.... sorry that page cannot be found 🤔</p>
           <Spinner
             errorMessage={"Redirecting to homepage"}
           />
