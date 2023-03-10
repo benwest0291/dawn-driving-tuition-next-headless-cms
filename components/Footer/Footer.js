@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container p-2 p-3">
            <div className="row">
               <div className="col-12 col-md-4 al">
-                  <Image alt="Dawn driving tuition logo" src="/logo.png" width={180} height={90} className="mt-3 mb-3"/>
+                  <Image alt="Dawn driving tuition logo" src="/logo.svg" width={180} height={100} className="mt-3 mb-3"/>
                    <ul>
                       <li className="mb-1"><FaPhoneAlt className="phone__logo" /><span className="footer__contact">07980413955</span></li>
                       <li className="mb-4"><FaEnvelope className="mail__logo"/> <span className="footer__contact-email">dawn@dawndriving.co.uk</span></li>
