@@ -3,6 +3,7 @@ import { createClient } from 'contentful'
 import Image from "next/image"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import Link from "next/link"
+import Spinner from "../../components/Spinner/Spinner"
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -32,6 +33,15 @@ export async function getStaticProps ({ params }) {
     'fields.slug' : params.slug
   })
 
+  if (!items.length){
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false
+      }
+    }
+  }
+
   return {
     props: {
       blog: items[ 0 ]},
@@ -41,7 +51,10 @@ export async function getStaticProps ({ params }) {
 
 const singleBlogPage = ({ blog }) => {
 
- if(!blog) return <div className="d-flex justify-contant-center p-5"><span class="loader"></span></div>
+  if (!blog) return
+  <Spinner
+      errorMessage={"Loading"}
+  />
 
   const { title, mainContent, featuredImage } = blog.fields
 
