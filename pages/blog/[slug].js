@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false
+    fallback: true
   }
 }
 
@@ -39,7 +39,9 @@ export async function getStaticProps ({ params }) {
   }
 }
 
-const singleBlogPage = ({ blog }) =>{
+const singleBlogPage = ({ blog }) => {
+
+ if(!blog) return <div className="d-flex justify-contant-center p-5"><span class="loader"></span></div>
 
   const { title, mainContent, featuredImage } = blog.fields
 
