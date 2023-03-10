@@ -24,8 +24,8 @@ const Navbar = () => {
           </div>
           <div className="">
             <div className="d-flex justify-content-end socials__nav">
-              <FaFacebookSquare className="facebook mt-4" />
-              <FaInstagram className="instagram mt-4" />
+              <Link href="https://www.facebook.com/people/Dawn-Driving-Tuition/100063501852474/" target="_blank"><FaFacebookSquare className="facebook mt-4" /></Link>
+              <Link href="https://www.instagram.com" target="_blank"></Link><FaInstagram className="instagram mt-4" />
             </div>
             <ul className={ `nav__bar ${toggleMenu}`}>
               <li onClick={ navBar }  className="nav__link m-2"><Link href="/#about">About</Link></li>

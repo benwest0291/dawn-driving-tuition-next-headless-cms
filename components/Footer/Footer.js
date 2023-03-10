@@ -29,8 +29,8 @@ const Footer = () => {
                 </div>
                 <div className="col-12 col-md-4 footer__responsive__lg">
                   <h2>My Socials</h2>
-                  <FaFacebookSquare className="facebook mt-4" />
-                  <FaInstagram className="instagram mt-4" />
+                   <Link href="https://www.facebook.com/people/Dawn-Driving-Tuition/100063501852474/" target="_blank"><FaFacebookSquare className="facebook mt-4" /></Link>
+                    <Link href="https://www.instagram.com" target="_blank"><FaInstagram className="instagram mt-4" /></Link>
                 </div>
               </div>
             </div>
