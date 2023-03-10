@@ -25,7 +25,7 @@ const contactPage = ({ contact }) => {
           <main className="container">
               <div className="row">
                 <div className="col-12 col-md-7">
-                  <h2 className="mt-5 mb-5">Area's covered</h2>
+                  <h2 className="mt-4 mb-5">Area's covered</h2>
                   {contact.map(info => (
                     <p key={info.sys.id }>{info.fields.textarea }</p>
                   ))}
@@ -36,7 +36,7 @@ const contactPage = ({ contact }) => {
                  <Map />
                 </div>
                 <div className="col-12 col-md-5">
-                  <h2 className="mt-5 mb-5">Contact me </h2>
+                  <h2 className="mt-4 mb-5">Contact me </h2>
                     <ContactForm />
                 </div>
               </div>

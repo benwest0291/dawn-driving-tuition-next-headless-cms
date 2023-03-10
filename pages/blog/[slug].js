@@ -45,7 +45,7 @@ const singleBlogPage = ({ blog }) =>{
   return (
       <>
       <main className="container">
-        <h2 className="mt-5 mb-3">{title}</h2>
+        <h2 className="mt-4 mb-3">{title}</h2>
          <div className="row">
           <div className="col-12 col-md-7">
             {documentToReactComponents(mainContent)}

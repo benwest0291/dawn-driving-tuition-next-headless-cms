@@ -22,7 +22,7 @@ const galleryPage = ({ gallery }) => {
             <>
               <main className="gallery">
                 <div className="container">
-                <h2 className="mt-5 mb-3">Gallery</h2>
+                <h2 className="mt-4 mb-3">Gallery</h2>
                 <div className="global__grid">
                     {gallery.map(info => (
                       <div key={ info.sys.id  } className="global__card">
