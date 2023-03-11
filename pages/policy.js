@@ -21,7 +21,7 @@ export async function getStaticProps (){
 const policyPage = ({ policy }) =>{
 
   return (
-    <section className="mt-5">
+    <main className="mt-5">
       <main className="container policy">
         {policy.map(info => (
           <Terms
@@ -29,7 +29,7 @@ const policyPage = ({ policy }) =>{
           />
         ))}
       </main>
-    </section>
+    </main>
   )
 }
 
