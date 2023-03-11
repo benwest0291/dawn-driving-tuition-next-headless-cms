@@ -15,21 +15,19 @@ export async function getStaticProps (){
     }
 }
 
-
-
-
 const policyPage = ({ policy }) =>{
 
   return (
-    <main className="mt-5">
+    <section className="mt-5">
       <main className="container policy">
         {policy.map(info => (
           <Terms
+              key={ info.sys.id }
               info={info}
           />
         ))}
       </main>
-    </main>
+    </section>
   )
 }
 
