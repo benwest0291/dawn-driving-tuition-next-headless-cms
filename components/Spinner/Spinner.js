@@ -1,6 +1,4 @@
-import Layout from "../Layout"
-
-const Skeleton = ({ errorMessage }) => {
+const Spinner = ({ errorMessage }) => {
 
   return (
     <div className="container">
@@ -12,4 +10,4 @@ const Skeleton = ({ errorMessage }) => {
   )
 }
 
-export default Skeleton
+export default Spinner
