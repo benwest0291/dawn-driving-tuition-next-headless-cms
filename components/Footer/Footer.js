@@ -17,7 +17,6 @@ const Footer = () => {
               <li className="mb-4"><FaEnvelope className="mail__logo" /> <span className="footer__contact-email">dawn@dawndriving.co.uk</span></li>
               <li className="footer__terms"><Link className="footer__links" href="/policy">Terms and conditions</Link></li>
             </ul>
-
           </div>
           <div className="col-12 col-md-4 footer__responsive__lg">
             <h2>Infomation</h2>
