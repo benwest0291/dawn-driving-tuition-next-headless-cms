@@ -13,7 +13,7 @@
     }
   }
 
-  &__btn{
+  &__btn {
     background-color: $black;
     padding: 5px 20px;
     color: $white;
@@ -24,13 +24,14 @@
     border: 2px solid $red;
   }
 
-  &__btn:hover, &__btn:focus{
-     background-color: $white;
-     color: $black;
-     transition: 0.5s ease-in;
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $white;
+    color: $black;
+    transition: 0.5s ease-in;
   }
 
-   &__btn-solid{
+  &__btn-solid {
     background-color: $red;
     padding: 5px 25px;
     color: $white;
@@ -41,10 +42,11 @@
     border: 2px solid $red;
   }
 
-  &__btn-solid:hover, &__btn-solid:focus{
-     background-color: $white;
-     color: $black;
-     transition: 0.5s ease-in;
+  &__btn-solid:hover,
+  &__btn-solid:focus {
+    background-color: $white;
+    color: $black;
+    transition: 0.5s ease-in;
   }
 
   h2 {
@@ -61,7 +63,7 @@
     color: $white;
   }
 
-  &__img{
+  &__img {
     width: 100%;
     height: 300px;
     margin-bottom: 50px;

@@ -1,12 +1,12 @@
-.text{
-   width: 90%;
+.text {
+  width: 90%;
 
   @media(max-width: $sm-width) {
-       width: 100%;
-    }
+    width: 100%;
+  }
 
-  h2{
-      border-left: $red 5px solid;
-      padding-left: 5px;
+  h2 {
+    border-left: $red 5px solid;
+    padding-left: 5px;
   }
 }

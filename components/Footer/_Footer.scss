@@ -1,45 +1,47 @@
-footer{
-  background: rgb(247,13,26);
-  background: linear-gradient(10deg, rgba(247,13,26,1) 0%, rgba(0,0,0,1) 39%);
+footer {
+  background: rgb(247, 13, 26);
+  background: linear-gradient(10deg, rgba(247, 13, 26, 1) 0%, rgba(0, 0, 0, 1) 39%);
   color: $white;
 
-  @media(min-width: $sm-width){
+  @media(min-width: $sm-width) {
     padding-top: 20px;
   }
 
-  .footer__terms, h2{
-      font-size: $font-s;
+  .footer__terms,
+  h2 {
+    font-size: $font-s;
   }
 
-  .footer{
+  .footer {
 
-    &__contact{
+    &__contact {
       margin-left: 10px;
       font-size: 14px;
     }
 
-    &__contact-email{
+    &__contact-email {
       margin-left: 6px;
       font-size: 14px;
     }
 
-    &__links{
+    &__links {
       color: $white;
       text-decoration: none;
       font-size: 16px;
     }
 
-    &__links:hover, :focus{
+    &__links:hover,
+    :focus {
       color: $red !important;
       transition: 0.2s ease-in;
     }
 
-    &__responsive__lg{
-        @media(min-width: $md-width){
-            padding: 70px 0 70px 0;
+    &__responsive__lg {
+      @media(min-width: $md-width) {
+        padding: 70px 0 70px 0;
 
-        @media(min-width: $sm-width){
-            padding: 70px 0 40px 0;
+        @media(min-width: $sm-width) {
+          padding: 70px 0 40px 0;
         }
       }
     }
@@ -50,23 +52,25 @@ footer{
     padding: 0;
   }
 
-  .mail__logo{
+  .mail__logo {
     font-size: 20px;
   }
 
-  .phone__logo{
-     font-size: 20px;
+  .phone__logo {
+    font-size: 20px;
   }
 }
 
-.facebook , .instagram{
+.facebook,
+.instagram {
   color: $white;
   font-size: 25px;
   margin: 0 10px 20px 0;
 
-  :hover, :focus{
-     color: $red !important;
-     transition: 0.7s ease-in;
-     cursor: pointer;
+  :hover,
+  :focus {
+    color: $red !important;
+    transition: 0.7s ease-in;
+    cursor: pointer;
   }
 }

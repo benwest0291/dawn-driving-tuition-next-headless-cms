@@ -1,51 +1,52 @@
-nav{
-  background: rgb(0,0,0);
-  background: linear-gradient(10deg, rgba(0,0,0,1) 53%, rgba(247,13,26,1) 100%);
+nav {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(10deg, rgba(0, 0, 0, 1) 53%, rgba(247, 13, 26, 1) 100%);
 
-  ul{
-     list-style-type: none;
+  ul {
+    list-style-type: none;
   }
 
-  li a{
+  li a {
     color: $white;
     font-size: $font-s;
     text-decoration: none;
 
-    @media(min-width: $sm-width){
-    flex-direction: column !important;
+    @media(min-width: $sm-width) {
+      flex-direction: column !important;
     }
   }
 }
 
-.nav{
-  a{
-     padding-bottom: 5px;
+.nav {
+  a {
+    padding-bottom: 5px;
   }
 
-  a:hover, a:focus{
+  a:hover,
+  a:focus {
     color: $red;
     transition: 0.5s ease-in;
   }
 }
 
-.hamburger-react{
+.hamburger-react {
   color: $white;
   margin-top: 80px;
 
-  @media(min-width: $sm-width){
+  @media(min-width: $sm-width) {
     display: none;
   }
 }
 
-.active{
+.active {
   display: block !important;
 
-    @media(min-width: $sm-width){
-       display: flex !important;
-   }
+  @media(min-width: $sm-width) {
+    display: flex !important;
+  }
 }
 
-.nav__bar{
+.nav__bar {
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -53,15 +54,15 @@ nav{
   margin-top: 80px;
 
 
-  @media(min-width: $sm-width){
+  @media(min-width: $sm-width) {
     display: flex;
     justify-content: flex-end;
     flex-direction: row !important;
     margin-top: 80px;
     margin-top: 5px;
-    }
+  }
 }
 
-.socials__nav{
+.socials__nav {
   margin-top: -140px;
 }

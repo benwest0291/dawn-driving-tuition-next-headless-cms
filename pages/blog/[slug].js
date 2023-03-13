@@ -15,10 +15,10 @@ export const getStaticPaths = async () => {
     content_type: 'blog'
   })
 
- const paths = res.items.map(item => {
+  const paths = res.items.map(item => {
     return {
       params: { slug: item.fields.slug }
-      }
+    }
   })
 
   return {
@@ -27,13 +27,13 @@ export const getStaticPaths = async () => {
   }
 }
 
-export async function getStaticProps ({ params }) {
+export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: 'blog',
-    'fields.slug' : params.slug
+    'fields.slug': params.slug
   })
 
-  if (!items.length){
+  if (!items.length) {
     return {
       redirect: {
         destination: "/",
@@ -44,8 +44,9 @@ export async function getStaticProps ({ params }) {
 
   return {
     props: {
-      blog: items[ 0 ]},
-      revalidate: 10
+      blog: items[0]
+    },
+    revalidate: 10
   }
 }
 
@@ -56,16 +57,16 @@ const singleBlogPage = ({ blog }) => {
   const { title, mainContent, featuredImage } = blog.fields
 
   return (
-      <>
+    <>
       <main className="container">
         <h2 className="mt-4 mb-3">{title}</h2>
-         <div className="row">
+        <div className="row">
           <div className="col-12 col-md-7">
             {documentToReactComponents(mainContent)}
             <div>
-            <h5 className="mt-4">Share this article on </h5>
-            <Link href="http://www.facebook.com"><FaFacebookSquare className="facebook__blog mt-1 mb-4" /></Link>
-            <Link href="https://www.instagram.com"><FaInstagram className="instagram__blog mt-1 mb-4" /></Link>
+              <h5 className="mt-4">Share this article on </h5>
+              <Link href="http://www.facebook.com"><FaFacebookSquare className="facebook__blog mt-1 mb-4" /></Link>
+              <Link href="https://www.instagram.com"><FaInstagram className="instagram__blog mt-1 mb-4" /></Link>
             </div>
             <Image src="/DVSA.jpg" width={160} height={100} className="mt-1 mb-3" />
           </div>
@@ -83,4 +84,4 @@ const singleBlogPage = ({ blog }) => {
   )
 }
 
-export default  singleBlogPage
+export default singleBlogPage

@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
- const ContactForm = () => {
-   const form = useRef();
-   const [statusMessage, setStatusMessage] = useState("");
+const ContactForm = () => {
+  const form = useRef();
+  const [statusMessage, setStatusMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();

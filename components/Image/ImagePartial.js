@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ImagePartial = ({info}) => {
+const ImagePartial = ({ info }) => {
   const { bodyImage } = info.fields
 
   return (

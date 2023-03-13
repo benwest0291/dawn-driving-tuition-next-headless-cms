@@ -1,18 +1,22 @@
-.blog__image{
--webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.75);
-width: 100%;
-object-fit: cover;
-height: 400px;
-border-radius: 2%;
+.blog__image {
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  border-radius: 2%;
 }
 
-.facebook__blog, .instagram__blog{
+.facebook__blog,
+.instagram__blog {
   color: $black;
   font-size: 40px;
 }
 
-.facebook__blog:hover,.facebook__blog:focus,  .instagram__blog:hover, .instagram__blog:focus{
+.facebook__blog:hover,
+.facebook__blog:focus,
+.instagram__blog:hover,
+.instagram__blog:focus {
   color: $red;
   cursor: pointer;
   transition: 0.5s ease-in;

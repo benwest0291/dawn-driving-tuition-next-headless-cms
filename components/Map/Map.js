@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export default function SimpleMap(){
+export default function SimpleMap() {
   const defaultProps = {
     center: {
       lat: 51.294425,
@@ -13,7 +13,7 @@ export default function SimpleMap(){
   };
 
   return (
-    <div  style={{ height: '470px', width: '100%' }}>
+    <div style={{ height: '470px', width: '100%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
